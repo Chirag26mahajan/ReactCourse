@@ -21,7 +21,7 @@ function App() {
     //But if i want to increment the value in this manner
 
     //Ab value single click me will be incremented by 4 15+4=19
-    //Callback function me dena padega 
+    //Callback function me dena padega e
     // setCounter(counter=>counter+1)
     // setCounter(counter=>counter+1)
     // setCounter(counter=>counter+1)
