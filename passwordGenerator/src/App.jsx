@@ -8,7 +8,7 @@ function App() {
 
 
   //useRef hook
-   const passwordRef = useRef(null)
+   const passwordRef = useRef(null) //ref humne use kiya hai taki effect a paye
   //useCallback(fn,dependencies)
   const passwordGenerator = useCallback(()=>{
     let pass = ""
@@ -24,7 +24,7 @@ function App() {
 
     setPassword(pass)
 
-  },[length,numAllowed,charAllowed,setPassword]) //password deta then infinite loop me he jayega ye 
+  },[length,numAllowed,charAllowed,setPassword]) //password deta then infinite loop me he jayega ye so thats why i wrote setPassword
 
   const copyPasswordToClipBoard = useCallback(()=>{
     //hover effect ke liye ref liya hai
@@ -48,7 +48,7 @@ function App() {
         className="outline-none w-full py-1 px-3"
         placeholder='password'
         readOnly
-        ref={passwordRef}
+         
          />
          <button onClick={copyPasswordToClipBoard} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0'>Copy</button>
       </div>
